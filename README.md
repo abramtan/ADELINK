@@ -1,7 +1,7 @@
 # ADELINK
 ADELINK is a mobile app designed to enable anyone to interface with ADELE, the 6-DOF ROS-powered robot designed and built by the SUTD Organization of Autonomous Robotics (SOAR). ADELINK currently supports tele-operation over sockets and upcoming features include a command line interface, live-streaming of the robot's camera feed, and no-code programming!
 
-Check ADELE out [here](https://link-url-here.org)!
+Check ADELE out [here](https://github.com/abramtan/Adele-ROS)!
 
 ADELE | ADELINK
 ---|---
