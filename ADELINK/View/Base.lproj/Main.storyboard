@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t9f-Rb-JJz">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Tex-ax-Mek">
+            <objects>
+                <tabBarController id="t9f-Rb-JJz" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fgn-RT-Dn8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                        <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
+                        <tabBarAppearance key="standardAppearance"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="mbT-OQ-74a"/>
+                        <segue destination="OSx-Yb-vDM" kind="relationship" relationship="viewControllers" id="gjt-WW-4Ac"/>
+                        <segue destination="yev-yp-6r5" kind="relationship" relationship="viewControllers" id="7gT-ps-359"/>
+                        <segue destination="CYJ-Jn-lgO" kind="relationship" relationship="viewControllers" id="vXD-nu-r9R"/>
+                        <segue destination="NUt-uy-UaS" kind="relationship" relationship="viewControllers" id="GLU-VB-11O"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B4r-88-a5Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1180" y="756"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="ADELINK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="home">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeb-hM-1BR">
+                                <rect key="frame" x="318" y="90" width="90" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIz-oT-HT2">
+                                <rect key="frame" x="169" y="44" width="90" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgt-TO-8Ad">
+                                <rect key="frame" x="20" y="44" width="90" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tb2-0x-GcX">
+                                <rect key="frame" x="0.0" y="134" width="428" height="716"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADELINK" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpl-m8-EXE">
+                                <rect key="frame" x="24" y="74" width="194.66666666666666" height="57.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="tpl-m8-EXE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="OiH-QX-T48"/>
+                            <constraint firstItem="tb2-0x-GcX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="R1v-IY-fAZ"/>
+                            <constraint firstItem="tb2-0x-GcX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="XdX-2r-eyO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tb2-0x-GcX" secondAttribute="trailing" id="qpv-Hf-Ncx"/>
+                            <constraint firstItem="tb2-0x-GcX" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="7" id="s66-fN-irN"/>
+                            <constraint firstItem="tpl-m8-EXE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="tHV-j2-FDI"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ADELINK_Tab_Bar_Icons_V2-1" selectedImage="ADELINK_Tab_Bar_Icons_V2-1" id="BKl-eW-cF2"/>
+                    <connections>
+                        <outlet property="IGWebView" destination="tb2-0x-GcX" id="kkI-2f-Tk3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2786.9158878504672" y="1596.5442764578834"/>
+        </scene>
+        <!--Live View Controller-->
+        <scene sceneID="eJM-Ah-dwK">
+            <objects>
+                <viewController id="CYJ-Jn-lgO" customClass="LiveViewController" customModule="ADELINK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LdC-8e-Kin">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pe8-iQ-dlN">
+                                <rect key="frame" x="180" y="443" width="68" height="40"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="LIVE">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="21"/>
+                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADELINK" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVa-mf-nV3">
+                                <rect key="frame" x="24" y="74" width="194.66666666666666" height="57.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KJU-6c-gVW"/>
+                        <constraints>
+                            <constraint firstItem="Pe8-iQ-dlN" firstAttribute="centerX" secondItem="LdC-8e-Kin" secondAttribute="centerX" id="dJB-cL-vC9"/>
+                            <constraint firstItem="oVa-mf-nV3" firstAttribute="top" secondItem="KJU-6c-gVW" secondAttribute="top" constant="30" id="ips-gA-TRb"/>
+                            <constraint firstItem="Pe8-iQ-dlN" firstAttribute="centerY" secondItem="LdC-8e-Kin" secondAttribute="centerY" id="jF6-K4-cjs"/>
+                            <constraint firstItem="oVa-mf-nV3" firstAttribute="leading" secondItem="KJU-6c-gVW" secondAttribute="leading" constant="24" id="sNl-BJ-LVd"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ADELINK_Tab_Bar_Icons_V2-4" selectedImage="ADELINK_Tab_Bar_Icons_V2-4" id="Y8r-ad-PSs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NSI-FS-Apw" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-398" y="1597"/>
+        </scene>
+        <!--Tele Op View Controller-->
+        <scene sceneID="Oy4-yM-2l8">
+            <objects>
+                <viewController id="OSx-Yb-vDM" customClass="TeleOpViewController" customModule="ADELINK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5sN-rE-vv9">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="BDU-wI-ksV">
+                                <rect key="frame" x="15" y="474" width="398" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKU-vq-Pbw">
+                                        <rect key="frame" x="0.0" y="0.0" width="122.66666666666667" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="L" cornerStyle="small">
+                                            <color key="baseBackgroundColor" white="0.046184098639999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="leftButton:" destination="OSx-Yb-vDM" eventType="touchUpInside" id="gbB-1p-2nf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nM7-C3-Rtl">
+                                        <rect key="frame" x="137.66666666666666" y="0.0" width="122.66666666666666" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="B" cornerStyle="small">
+                                            <color key="baseBackgroundColor" white="0.046184098639999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="backwardButton:" destination="OSx-Yb-vDM" eventType="touchUpInside" id="7Y9-jY-xEe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LzS-vt-D0w">
+                                        <rect key="frame" x="275.33333333333331" y="0.0" width="122.66666666666669" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="R" cornerStyle="small">
+                                            <color key="baseBackgroundColor" white="0.046184098639999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="rightButton:" destination="OSx-Yb-vDM" eventType="touchUpInside" id="Ou9-si-Hga"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Orb-lx-5Pd"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lA2-H6-Mmj">
+                                <rect key="frame" x="15" y="359" width="398" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZo-hc-cc2">
+                                        <rect key="frame" x="0.0" y="0.0" width="122.66666666666667" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="r2G-UJ-Ycw"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="D" cornerStyle="small">
+                                            <color key="baseBackgroundColor" white="0.046184098639999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="downButton:" destination="OSx-Yb-vDM" eventType="touchUpInside" id="omA-Th-beC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OT9-z0-Nod">
+                                        <rect key="frame" x="137.66666666666666" y="0.0" width="122.66666666666666" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="lAy-nu-3DR"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="F" cornerStyle="small">
+                                            <color key="baseBackgroundColor" white="0.046184098639999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="forwardButton:" destination="OSx-Yb-vDM" eventType="touchUpInside" id="RZr-Xl-vpv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAZ-oR-mzc">
+                                        <rect key="frame" x="275.33333333333331" y="0.0" width="122.66666666666669" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="5Xc-yw-4EZ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="U" cornerStyle="small">
+                                            <color key="baseBackgroundColor" white="0.046184098639999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="upButton:" destination="OSx-Yb-vDM" eventType="touchUpInside" id="hgg-fe-Ufg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mJC-hL-vsr">
+                                <rect key="frame" x="15" y="244" width="398" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSe-yt-3Eu">
+                                        <rect key="frame" x="0.0" y="0.0" width="191.66666666666666" height="100"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Connect" cornerStyle="small">
+                                            <color key="baseBackgroundColor" white="0.046184098639999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="connectButton:" destination="OSx-Yb-vDM" eventType="touchUpInside" id="gb6-gp-CpU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Dv-dg-PJz">
+                                        <rect key="frame" x="206.66666666666663" y="0.0" width="191.33333333333337" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="h64-ON-nIg"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Disconnect" cornerStyle="small">
+                                            <color key="baseBackgroundColor" white="0.046184098639999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="disconnectButton:" destination="OSx-Yb-vDM" eventType="touchUpInside" id="eBp-GZ-d1M"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADELINK" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrJ-Kx-bvD">
+                                <rect key="frame" x="24" y="74" width="194.66666666666666" height="57.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLr-K7-N69">
+                                <rect key="frame" x="15" y="589" width="398" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="A2R-mT-840"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Translation" cornerStyle="small">
+                                    <color key="baseBackgroundColor" white="0.046184098639999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="toButton:" destination="OSx-Yb-vDM" eventType="touchUpInside" id="A2i-rr-QIt"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter IP Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PRg-sF-Zzd">
+                                <rect key="frame" x="35" y="161.33333333333334" width="358" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="by9-ua-yaJ"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="route"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="F7o-cT-im0"/>
+                        <constraints>
+                            <constraint firstItem="lA2-H6-Mmj" firstAttribute="top" secondItem="mJC-hL-vsr" secondAttribute="bottom" constant="15" id="0Ix-tL-h7g"/>
+                            <constraint firstItem="lA2-H6-Mmj" firstAttribute="leading" secondItem="F7o-cT-im0" secondAttribute="leading" constant="15" id="80s-cy-pJc"/>
+                            <constraint firstItem="F7o-cT-im0" firstAttribute="trailing" secondItem="PRg-sF-Zzd" secondAttribute="trailing" constant="35" id="8K3-cD-8Cf"/>
+                            <constraint firstItem="BDU-wI-ksV" firstAttribute="leading" secondItem="F7o-cT-im0" secondAttribute="leading" constant="15" id="Llh-Mc-Vp9"/>
+                            <constraint firstItem="mJC-hL-vsr" firstAttribute="leading" secondItem="F7o-cT-im0" secondAttribute="leading" constant="15" id="Pj8-wv-p5y"/>
+                            <constraint firstItem="mJC-hL-vsr" firstAttribute="top" secondItem="F7o-cT-im0" secondAttribute="top" constant="200" id="SF0-qv-RQq"/>
+                            <constraint firstItem="MLr-K7-N69" firstAttribute="leading" secondItem="F7o-cT-im0" secondAttribute="leading" constant="15" id="ZSA-Fk-RjA"/>
+                            <constraint firstItem="PRg-sF-Zzd" firstAttribute="leading" secondItem="F7o-cT-im0" secondAttribute="leading" constant="35" id="akA-QV-wXl"/>
+                            <constraint firstItem="BDU-wI-ksV" firstAttribute="top" secondItem="lA2-H6-Mmj" secondAttribute="bottom" constant="15" id="f5i-Rx-0aK"/>
+                            <constraint firstAttribute="trailing" secondItem="BDU-wI-ksV" secondAttribute="trailing" constant="15" id="gpZ-IM-fWf"/>
+                            <constraint firstItem="YrJ-Kx-bvD" firstAttribute="top" secondItem="F7o-cT-im0" secondAttribute="top" constant="30" id="kAd-Rj-iEz"/>
+                            <constraint firstItem="F7o-cT-im0" firstAttribute="trailing" secondItem="mJC-hL-vsr" secondAttribute="trailing" constant="15" id="kEt-S1-XrZ"/>
+                            <constraint firstItem="PRg-sF-Zzd" firstAttribute="top" secondItem="YrJ-Kx-bvD" secondAttribute="bottom" constant="30" id="ldM-2i-yoJ"/>
+                            <constraint firstItem="YrJ-Kx-bvD" firstAttribute="leading" secondItem="F7o-cT-im0" secondAttribute="leading" constant="24" id="oPy-tB-roo"/>
+                            <constraint firstItem="F7o-cT-im0" firstAttribute="trailing" secondItem="lA2-H6-Mmj" secondAttribute="trailing" constant="15" id="zID-zo-4so"/>
+                            <constraint firstItem="F7o-cT-im0" firstAttribute="trailing" secondItem="MLr-K7-N69" secondAttribute="trailing" constant="15" id="zPy-2t-oNd"/>
+                            <constraint firstItem="MLr-K7-N69" firstAttribute="top" secondItem="BDU-wI-ksV" secondAttribute="bottom" constant="15" id="zel-9w-Dhd"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ADELINK_Tab_Bar_Icons_V2-2" selectedImage="ADELINK_Tab_Bar_Icons_V2-2" id="56Y-Lt-IsM"/>
+                    <navigationItem key="navigationItem" id="kmN-JE-T1c"/>
+                    <connections>
+                        <outlet property="backButton" destination="nM7-C3-Rtl" id="DPS-Zo-J0c"/>
+                        <outlet property="downButton" destination="iZo-hc-cc2" id="h45-Gy-kwn"/>
+                        <outlet property="forwardButton" destination="OT9-z0-Nod" id="xAk-xg-2MQ"/>
+                        <outlet property="ipAddress" destination="PRg-sF-Zzd" id="I7I-Oi-J67"/>
+                        <outlet property="leftButton" destination="AKU-vq-Pbw" id="5Tr-88-r5s"/>
+                        <outlet property="rightButton" destination="LzS-vt-D0w" id="6e0-LB-G0s"/>
+                        <outlet property="toButton" destination="MLr-K7-N69" id="ZgC-9N-C2S"/>
+                        <outlet property="upButton" destination="QAZ-oR-mzc" id="Trh-Ak-xZj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N0a-j0-dZH" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1982.2429906542054" y="1596.5442764578834"/>
+        </scene>
+        <!--Intelligence View Controller-->
+        <scene sceneID="E1V-ME-6Af">
+            <objects>
+                <viewController id="yev-yp-6r5" customClass="IntelligenceViewController" customModule="ADELINK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Jj-b9-THc">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" text="adele@adele-latte-panda ~ % _" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="akh-1A-Rvj">
+                                <rect key="frame" x="0.0" y="144" width="428" height="699"/>
+                                <color key="backgroundColor" white="0.050249787414965989" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADELINK" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRE-iT-Lpe">
+                                <rect key="frame" x="24" y="74" width="194.66666666666666" height="57.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TRj-Om-Jfo"/>
+                        <constraints>
+                            <constraint firstItem="uRE-iT-Lpe" firstAttribute="leading" secondItem="TRj-Om-Jfo" secondAttribute="leading" constant="24" id="4ki-cY-ZAh"/>
+                            <constraint firstItem="TRj-Om-Jfo" firstAttribute="trailing" secondItem="akh-1A-Rvj" secondAttribute="trailing" id="9lc-cg-ffg"/>
+                            <constraint firstItem="TRj-Om-Jfo" firstAttribute="bottom" secondItem="akh-1A-Rvj" secondAttribute="bottom" id="Jef-Y1-gBy"/>
+                            <constraint firstItem="uRE-iT-Lpe" firstAttribute="top" secondItem="TRj-Om-Jfo" secondAttribute="top" constant="30" id="WS9-oA-4T7"/>
+                            <constraint firstItem="akh-1A-Rvj" firstAttribute="top" secondItem="TRj-Om-Jfo" secondAttribute="top" constant="100" id="kKX-MF-zAu"/>
+                            <constraint firstItem="akh-1A-Rvj" firstAttribute="centerX" secondItem="9Jj-b9-THc" secondAttribute="centerX" id="nOM-JL-tcR"/>
+                            <constraint firstItem="akh-1A-Rvj" firstAttribute="leading" secondItem="TRj-Om-Jfo" secondAttribute="leading" id="vCf-oU-KzR"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ADELINK_Tab_Bar_Icons_V2-3" selectedImage="ADELINK_Tab_Bar_Icons_V2-3" id="qkf-AU-r75"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jxz-5U-L4d" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1180.3738317757009" y="1596.5442764578834"/>
+        </scene>
+        <!--More View Controller-->
+        <scene sceneID="bxl-iW-ReY">
+            <objects>
+                <viewController id="NUt-uy-UaS" customClass="MoreViewController" customModule="ADELINK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3vf-Ip-EjG">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3k-29-QYH">
+                                <rect key="frame" x="172" y="443" width="84" height="40"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="MORE">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="21"/>
+                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADELINK" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5L-f6-2vZ">
+                                <rect key="frame" x="24" y="74" width="194.66666666666666" height="57.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zJo-qG-wyD"/>
+                        <constraints>
+                            <constraint firstItem="a5L-f6-2vZ" firstAttribute="leading" secondItem="zJo-qG-wyD" secondAttribute="leading" constant="24" id="Tnx-4X-mb6"/>
+                            <constraint firstItem="a5L-f6-2vZ" firstAttribute="top" secondItem="zJo-qG-wyD" secondAttribute="top" constant="30" id="ejf-9a-fpZ"/>
+                            <constraint firstItem="Z3k-29-QYH" firstAttribute="centerX" secondItem="3vf-Ip-EjG" secondAttribute="centerX" id="iK9-43-3lV"/>
+                            <constraint firstItem="Z3k-29-QYH" firstAttribute="centerY" secondItem="3vf-Ip-EjG" secondAttribute="centerY" id="zDk-k3-YW9"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ADELINK_Tab_Bar_Icons_V2-5" selectedImage="ADELINK_Tab_Bar_Icons_V2-5" id="5JM-VT-7Hg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OeQ-0I-7sW" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="1597"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ADELINK_Tab_Bar_Icons_V2-1" width="32" height="32"/>
+        <image name="ADELINK_Tab_Bar_Icons_V2-2" width="32" height="32"/>
+        <image name="ADELINK_Tab_Bar_Icons_V2-3" width="32.333332061767578" height="32"/>
+        <image name="ADELINK_Tab_Bar_Icons_V2-4" width="32" height="32"/>
+        <image name="ADELINK_Tab_Bar_Icons_V2-5" width="32" height="32"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
